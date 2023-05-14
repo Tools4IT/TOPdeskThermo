@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      background-color: #2196F3;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Wi-Fi Configuration</h2>
+  <form action="/save_wifi" method="POST">
+    Wi-Fi SSID: <input type="text" name="wifi_ssid"><br><br>
+    Wi-Fi Password: <input type="password" name="wifi_pw"><br><br>
+    <input type="submit" value="Save">
+  </form>
+  <button onclick="window.location.href='/'">Go Back</button>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      background-color: #2196F3;
+      color: white;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>GP Configuration</h2>
+  <div class="container">
+    <form action="/save_gp" method="POST">
+      <label for="td_group">Group:</label>
+      <input type="text" name="td_group" id="td_group"><br><br>
+      <label for="num_led">Number of LEDs:</label>
+      <input type="text" name="num_led" id="num_led"><br><br>
+      <input type="submit" value="Save">
+    </form>
+  </div>
+  <button onclick="window.location.href='/'">Go Back</button>
+</body>
+</html>
